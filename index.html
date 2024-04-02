@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Euclid Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- fonts and icon -->
        <style>
   @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Lora:ital@0;1&family=Tiro+Devanagari+Hindi&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
- 
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 </style>
+<!-- favicon -->
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+      <!-- css stylesheet -->
     <style>
       *{
         padding: 0;
         margin: 0;
       }
-      body{
+      /* body{
         background-color: #fff8e4e1;
-        }
+        } */
         .head1{
-          background-color:  #2a9d8f!important;
+          /* background-color:  #2a9d8f!important; */
+          background-color:  #3a6ea5!important;
           padding-top: 3px;
           padding-bottom:2px ;
           margin: 0;
@@ -37,7 +43,7 @@
         .head{
             text-align: center;
           
-           font-size: 2rem;
+           font-size: 2.3rem;
 /*            font-family: 'Poppins', sans-serif; */
             font-family: 'Afacad', sans-serif;
             margin-top: 5px;
@@ -65,20 +71,21 @@
           align-items: center; */
         }
         .card{
-         border: 2px dashed;
-         background-color: #fbe8963c;
+         border: 1px solid grey;
+         background-color: #f9f9f99d;
         }
 
         
         .menuList{
           display: flex;
-          flex-direction: column;
+          flex-direction:column;
           flex-wrap: wrap;
-          
-          align-items: center;
+          align-content: center;
+          text-align: left;
           list-style: none;
 
         }
+        
         li.menu{
           margin: 15px;
           /* border: o.5px solid #eec759; */
@@ -88,10 +95,16 @@
           position: relative;
         }
 
-        li.menu::before {
+        li.menu a:hover{
+            color:rgb(1, 165, 230);
+            border-bottom: 2px solid rgb(1, 165, 230);
+            
+        }
+
+        /* li.menu::before {
             content: "";
             position: absolute;
-            /* left: 0; */
+           
             right: 0;
             bottom: 0;
             width: 0;
@@ -99,13 +112,14 @@
             background-color: #fc5e52;
             transition: width 0.25s ease-out;
 
-        }
+        } */
 
-        li.menu:hover::before{
+        /* li.menu:hover::before{
           width: 100%;
           left: 0;
-          right: auto;
-        }
+          right:auto;
+        }*/
+
         a{
           text-decoration: none;
           font-size: 2rem;
@@ -113,7 +127,10 @@
           padding: 10px;
           font-family: 'Afacad', sans-serif;
           
-        }
+        } 
+
+        
+
 
         
         .tHead{
@@ -139,7 +156,7 @@
 
      .aboutContent{
       font-family: 'Poppins', sans-serif;
-       font-size: 0.5rem
+       font-size: 14px;
       
      }
             </style>
@@ -157,8 +174,8 @@
         </div>
       </header>
       <div class="carda">
-        <div class="card text-center border-warning " style="min-width: 20rem; max-width: 50rem;">
-          <div class="card-header">
+        <div class="card text-center rounded-0 " style="min-width: 20rem; max-width: 50rem;">
+          <div class="card-header bg-info-subtle">
             Quotes of the day
           </div>
           <div class="card-body">
@@ -174,36 +191,36 @@
       <div class="menuCont">
         <ul class="menuList">
           <li class="menu">
-            <a href="https://jarviskumar.github.io/euclid/book.html">Books</a>
+            <a href="https://jarviskumar.github.io/euclid/book.html"><i class="bi bi-book"></i> Books</a>
           </li>
           <li class="menu">
-            <a href="https://easnotice.blogspot.com/">Notice</a>
+            <a href="https://easnotice.blogspot.com/"><i class="bi bi-info-circle"></i> Notice</a>
           </li>
           <li class="menu">
-          <a href="https://jarviskumar.github.io/euclid/link.html">Links</a>
+          <a href="https://jarviskumar.github.io/euclid/link.html"><i class="bi bi-globe"></i> Links</a>
         </li>
           <li class="menu">
-            <a href="https://jarviskumar.github.io/euclid/quotes.html">Quotes</a>
+            <a href="https://jarviskumar.github.io/euclid/quotes.html"><i class="bi bi-chat-square-quote"></i> Quotes</a>
           </li>
           <li class="menu">
-            <a href="https://jarviskumar.github.io/euclid/download.html">Downloads</a>
+            <a href="https://jarviskumar.github.io/euclid/download.html"><i class="bi bi-download"></i> Downloads</a>
           </li>
         </ul>
       </div>
       <br>
       <div class="about">
-        <div class="tHead">
+        <div class="tHead" style="border-left: 4px solid #f9a620";>
           About Us
         </div>
         <div class="aboutContent">
-          <p> Welcome to Euclid Academy Nurturing Minds, Shaping Futures!
+          <p> <b>Welcome to Euclid Academy Nurturing Minds, Shaping Futures!</b>
 
             Established in 2019 with unwavering dedication and passion by our founder and teacher, Dipesh Pradhan. Euclid Academy began as a  home tuition. Through years of hard work and commitment, it has evolved into a reputable educational institution that strives for excellence in every aspect of a student's learning journey.</p>
            
             
            <p> Our journey doesn't stop here; it's a continuous pursuit of academic and personal growth. </p>
             
-           <p> Thank you for choosing Euclid Academy Where Education meets Excellence!</p>
+           <p class="fw-semibold text-center mt-2" > <i class="bi bi-heart-fill" style="color:rgb(241, 66, 66);"></i> Thank you for choosing Euclid Academy Where Education meets Excellence!</p>
          </div>
        </div>
        <br>
@@ -217,8 +234,8 @@
        </div>
       
       <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 ml-2 my-4 border-top">
-      <p class="col-md-3 mb-0 text-center">© 2023-24 Euclid Academy <br>
-        Design & Founded by <b>Dipesh Pradhan</b></p>
+      <p class="col-md-4 mb-0 text-center">© 2019-24 Euclid Academy <br>
+        Design & Founded by <b>Dipesh Pradhan</b><br>(Teacher, Graphic Designer, FontEnd Developer)</p>
 
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="https://jarviskumar.github.io/euclid" class="nav-link px-2 text-muted">Home</a></li>
